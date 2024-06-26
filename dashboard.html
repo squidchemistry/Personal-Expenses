@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        form{
+            backdrop-filter:blur(15px);
+            background:rgba(255,255,255,0.2);
+            background-size:30px;
+            width:350px;
+            height:140px;
+            padding:100px 50px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <form id="expenseForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <label for="expenseType">Expense Type:</label>
+            <input type="text" id="expenseType" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <div class="dashboard">
+            <h2>Spent Amount: <span id="spentAmount">0</span></h2>
+            <h2>Savings Amount: <span id="savingsAmount">0</span></h2>
+            <h2>Investment Amount: <span id="investmentAmount">0</span></h2>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
